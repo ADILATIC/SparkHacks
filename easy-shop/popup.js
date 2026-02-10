@@ -1,10 +1,3 @@
-/**
- * Popup script for Smart Buy Assistant (Gemini Hack Demo Edition).
- * Handles UI events, storage, messaging to content script, and AI API calls.
- * Keeps it snappy: Async all the things, error boundaries for flaky networks.
- * Storage: Tracking state (bool), history (array of {title, url, timestamp}).
- * Hack Note: No user key input—hardcode from .env for demo (swap below). Falls back to mock if missing.
- */
 
 // DOM elements
 const enableTracking = document.getElementById('enableTracking');
@@ -13,7 +6,7 @@ const outputDiv = document.getElementById('output');
 const viewHistoryBtn = document.getElementById('viewHistory');
 const loadingDiv = document.getElementById('loading');
 
-// Hardcoded API key (from .env—swap your GEMINI_API_KEY here for demo; never commit!)
+// Using our Gemini api key
 const apiKey = 'AIzaSyCfwBZx1K-PmLK6yPys7ACZrVnEeDNtdpg';  
 
 // State from storage
